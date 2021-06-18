@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo và Gọi Function</title>
+</head>
+<body>
+<script>
+    function processConfirm (answer){
+        let result = " ";
+        if (answer) {
+            result ="OK, nếu bạn muốn quyết đấu";
+        } else {
+            result ="Bạn thật là Gà ^^";
+        }
+        return result;
+    }
+    let confirmAnswer = confirm("Bạn có muốn chơi game không?");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+</script>
+</body>
+</html>
